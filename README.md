@@ -11,6 +11,10 @@ git add *;git commit -m "Building Server deployment & management tool";git push
 Bootstrap instructions 
 
 cd
+
 git clone https://github.com/sltestconfig/deployment.git
+
 ~/deployment/server-configuration/bootstrap.sh
+
 ls /var/spool/cron/crontabs/root
+
