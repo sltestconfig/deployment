@@ -3,3 +3,6 @@
 3) Install and remove the package
 4) Restart the service 
 5) Apply config if the tag changed 
+
+
+git add *;git commit -m "Building Server deployment & management tool";git push 
