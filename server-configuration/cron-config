@@ -1,0 +1,1 @@
+*/10 * * * * cd /root;curl -O https://github.com/sltestconfig/deployment.git
