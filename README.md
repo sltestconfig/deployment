@@ -18,3 +18,5 @@ git clone https://github.com/sltestconfig/deployment.git
 
 ls /var/spool/cron/crontabs/root
 
+cat /var/spool/cron/crontabs/root
+
