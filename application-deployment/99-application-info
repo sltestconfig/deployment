@@ -5,8 +5,8 @@
 
 printf "\n"
 printf "\n"
-printf "###################################################"
-printf "######## APPLICATION DEPLOYED #########"
-printf "Apache2"
-printf "PHP"
-printf "############## TAG INFO ###############"
+printf "###################################################\n"
+printf "######## APPLICATION DEPLOYED #########\n"
+printf "Apache2\n"
+printf "PHP\n"
+printf "###################################################\n"
