@@ -18,4 +18,4 @@ IMPLEMENT
 MOTD
 LOGS
 /usr/bin tool
-send email 
+send emails
