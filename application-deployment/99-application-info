@@ -11,5 +11,6 @@ printf "Apache2"
 printf "PHP"
 printf "############## TAG INFO ###############"
 TAG=$(git rev-parse --short HEAD)
-printf  "TAG DEPLOYED $TAG"
+printf "TAG DEPLOYED $TAG"
+printf "SLACK
 print "###################################################"
