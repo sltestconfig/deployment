@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOME=/root/deployment/
+HOME=/root/deployment
 
 ###### INSTALL APACHE2 ######
 
