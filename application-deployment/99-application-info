@@ -9,7 +9,6 @@ printf "###################################################"
 printf "######## APPLICATION DEPLOYED #########"
 printf "Apache2"
 printf "PHP"
-printf "NCAT"
 printf "############## TAG INFO ###############"
 TAG=$(git rev-parse --short HEAD)
 printf  "TAG DEPLOYED $TAG"
