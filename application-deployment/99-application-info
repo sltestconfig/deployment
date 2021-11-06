@@ -11,6 +11,7 @@ echo "PHP"
 echo "#######################################"
 echo "############ TAG DEPLOYED #############"
 echo "#######################################"
-cat /root/deployment/application-deployment/apptag
+Source - https://github.com/sltestconfig/deployment
+Tag - `cat /root/deployment/application-deployment/apptag`
 echo "#######################################"
 
