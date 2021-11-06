@@ -1,1 +1,1 @@
-*/2 * * * * cd /root;git clone https://github.com/sltestconfig/deployment.git;cd deployment;git pull
+*/3 * * * * cd /root;git clone https://github.com/sltestconfig/deployment.git;cd deployment;git pull;/root/deployment/application-deployment/application-installer.sh
