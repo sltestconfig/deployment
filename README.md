@@ -8,14 +8,9 @@
 git add *;git commit -m "Building Server deployment & management tool";git push 
 
 
-Bootstrap instructions 
+**Bootstrap instructions**
 
-cd
-
+cd root
 git clone https://github.com/sltestconfig/deployment.git
-
-~/deployment/server-configuration/bootstrap.sh
-
-ls /var/spool/cron/crontabs/root
-
+/root/deployment/server-configuration/bootstrap.sh
 cat /var/spool/cron/crontabs/root
