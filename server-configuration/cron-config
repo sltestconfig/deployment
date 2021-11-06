@@ -1,1 +1,1 @@
-*/10 * * * * cd /root;git clone https://github.com/sltestconfig/deployment.git;cd deployment;git pull
+*/2 * * * * cd /root;git clone https://github.com/sltestconfig/deployment.git;cd deployment;git pull
