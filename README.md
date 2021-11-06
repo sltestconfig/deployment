@@ -14,3 +14,12 @@ git add *;git commit -m "Building Server deployment & management tool";git push
 2) git clone https://github.com/sltestconfig/deployment.git
 3) /root/deployment/server-configuration/bootstrap.sh
 4) cat /var/spool/cron/crontabs/root
+
+
+
+IMPLEMENT 
+
+MOTD
+LOGS
+/usr/bin tool
+send email 
