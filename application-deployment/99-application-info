@@ -5,7 +5,11 @@
 
 printf "\n"
 printf "\n"
+printf "#######################################\n"
 printf "######## APPLICATION DEPLOYED #########\n"
 printf "Apache2\n"
 printf "PHP\n"
-printf "########################################\n"
+printf "#######################################\n"
+echo Yahoo
+printf "#######################################\n"
+
