@@ -7,10 +7,12 @@ if [ -f "$APPTAGFILE" ]; then
    DEPLOYEDTAG=$(cat $APPTAGFILE)
    NEWAPPTAG=$(git rev-parse --short HEAD)
    echo NEWAPPTAG > $APPTAGFILE
+   touch $HOME/if
 else
    DEPLOYEDTAG=none
    NEWAPPTAG=$(git rev-parse --short HEAD)
    echo $NEWAPPTAG > $APPTAGFILE
+   touch $HOME/else
 fi
 
 if [ $DEPLOYEDTAG != $NEWAPPTAG ];then
