@@ -14,7 +14,7 @@ git add *;git commit -m "Building Server deployment & management tool";git push
 4) /root/deployment/server-configuration/bootstrap.sh
 5) cat /var/spool/cron/crontabs/root
 
-IMPLEMENT 
+IMPLEMENTED
 
 MOTD
 LOGS
