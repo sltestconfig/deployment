@@ -6,7 +6,6 @@ APPTAGFILE=$HOME/application-deployment/apptag
 if [ -f "$APPTAGFILE" ]; then
    DEPLOYEDTAG=$(cat $APPTAGFILE)
    NEWAPPTAG=$(git rev-parse --short HEAD)
-   echo $NEWAPPTAG > $APPTAGFILE
 else
    DEPLOYEDTAG=NONE
    NEWAPPTAG=$(git rev-parse --short HEAD)
