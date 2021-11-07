@@ -8,15 +8,17 @@ echo "######## APPLICATION DEPLOYED #########"
 echo "#######################################"
 echo "Apache2"
 echo "PHP"
+echo
 echo "#######################################"
 echo "############ TAG DEPLOYED #############"
 echo "#######################################"
 echo "Source - https://github.com/sltestconfig/deployment"
 echo "Tag - $(cat /root/deployment/application-deployment/apptag)"
+echo
 echo "#######################################"
 echo "############ ADMIN USER ###############"
 echo "System Admin - John Doe
-echo "#######################################"
+echo
 
 
 
