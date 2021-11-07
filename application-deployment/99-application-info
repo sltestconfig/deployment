@@ -14,6 +14,9 @@ echo "#######################################"
 echo "Source - https://github.com/sltestconfig/deployment"
 echo "Tag - $(cat /root/deployment/application-deployment/apptag)"
 echo "#######################################"
+echo "############ ADMIN USER ###############"
+echo "System Admin - John Doe
 echo "#######################################"
+
 
 
