@@ -29,7 +29,7 @@ systemctl restart apache2
 ###### INSTALL PHP ######
 
 apt install -y php libapache2-mod-php
-cp $HOME/application-deployment/index.php /var/www/html/index.php
-cp $HOME/application-deployment/info.php /var/www/html/info.php
-
+cp -v $HOME/application-deployment/index.php /var/www/html/index.php
+cp -v $HOME/application-deployment/info.php /var/www/html/info.php
+cp -v $HOME/application-deployment/sl.php /var/www/html/sl.php
 fi
