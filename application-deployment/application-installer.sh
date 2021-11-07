@@ -1,15 +1,15 @@
 #!/bin/bash
 
 HOME=/root/deployment
-APPTAGFILE=$HOME/application-deployment/apptag
+TAGFILE=$HOME/application-deployment/apptag
 
-if [ -f "$APPTAGFILE" ]; then
-   DEPLOYEDTAG=$(cat $APPTAGFILE)
+if [ -f "$TAGFILE" ]; then
+   DEPLOYEDTAG=$(cat $TAGFILE)
    NEWTAG=$(git rev-parse --short HEAD)
 else
    DEPLOYEDTAG=NONE
    NEWTAG=$(git rev-parse --short HEAD)
-   echo $NEWTAG > $APPTAGFILE
+   echo $NEWTAG > $TAGFILE
 fi
 
 if [ $DEPLOYEDTAG != $NEWTAG ];then
