@@ -32,4 +32,5 @@ apt install -y php libapache2-mod-php
 cp -v $HOME/application-deployment/index.php /var/www/html/index.php
 cp -v $HOME/application-deployment/info.php /var/www/html/info.php
 cp -v $HOME/application-deployment/sl.php /var/www/html/sl.php
+cp -v $HOME/application-deployment/sk.php /var/www/html/sk.php
 fi
