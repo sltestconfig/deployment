@@ -20,3 +20,5 @@ MOTD
 LOGS
 /usr/bin tool
 send emails
+
+update thru cron and give a tool to update manually 
