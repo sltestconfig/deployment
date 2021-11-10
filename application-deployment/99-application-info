@@ -17,8 +17,7 @@ echo "Tag - $(cat /root/deployment/application-deployment/apptag)"
 echo
 echo "#######################################"
 echo "############ ADMIN USER ###############"
-echo "System Admin - John Doe"
 echo "#######################################"
-echo
+echo "System Admin - John Doe"
 echo
 echo
