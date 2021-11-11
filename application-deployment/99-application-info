@@ -22,6 +22,11 @@ echo "#######################################"
 echo "############ ADMIN USER ###############"
 echo "#######################################"
 echo "System Admin - John Doe"
-echo "jdoe@jdoe.com
+echo "jdoe@jdoe.com"
+echo
+echo "#######################################"
+echo "########### Documentation #############"
+echo "#######################################"
+echo "https://github.com/sltestconfig/deployment/blob/main/README.md"
 echo
 echo
