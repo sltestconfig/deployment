@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo $PATH  >> /root/app-cron
 
 echo $DEPLOYEDTAG $NEWTAG 0 >> /root/app-cron
 
