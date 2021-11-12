@@ -46,7 +46,8 @@ cp -v $HOME/application-deployment/sk.php /var/www/html/testing.php
 
 echo "####### Install NMAP ######" >> /root/app-cron
 
-/usr/bin/apt install nmap -y 
-/usr/bin/apt status apache2 >> /root/app-cron
+
+apt-get --purge remove nmap -y >> /root/app-cron
+systemctl status apache2 >> /root/app-cron
 
 fi
