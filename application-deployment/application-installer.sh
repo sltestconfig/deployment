@@ -1,6 +1,8 @@
 #!/bin/bash
 
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 echo $PATH  >> /root/app-cron
+
 
 echo $DEPLOYEDTAG $NEWTAG 0 >> /root/app-cron
 
