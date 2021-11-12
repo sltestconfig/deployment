@@ -1,18 +1,27 @@
 #!/bin/bash
 
+
+echo $DEPLOYEDTAG $NEWTAG 0 >> /root/app-cron
+
 HOME=/root/deployment
 TAGFILE=$HOME/application-deployment/apptag
 
 if [ -f "$TAGFILE" ]; then
    DEPLOYEDTAG=$(cat $TAGFILE)
    NEWTAG=$(git rev-parse --short HEAD)
+   echo $NEWTAG > $TAGFILE
+   echo $DEPLOYEDTAG $NEWTAG 1 >> /root/app-cron
 else
    DEPLOYEDTAG=NONE
    NEWTAG=$(git rev-parse --short HEAD)
    echo $NEWTAG > $TAGFILE
+   echo $DEPLOYEDTAG $NEWTAG 2 >> /root/app-cron
 fi
 
 if [ $DEPLOYEDTAG != $NEWTAG ];then
+
+   echo $DEPLOYEDTAG $NEWTAG 3 >> /root/app-cron
+
 
 ###### UPDATED MOTD ######
 
