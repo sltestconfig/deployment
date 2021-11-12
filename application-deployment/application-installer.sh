@@ -29,15 +29,15 @@ cp -v $HOME/application-deployment/99-application-info /etc/update-motd.d/99-app
 
 echo "###### INSTALL APACHE2 ######" >> /root/app-cron
 
-apt update
-apt install apache2 -y
+/usr/bin/apt update
+/usr/bin/apt install apache2 -y
 systemctl enable apache2
 cp -v $HOME/application-deployment/dir.conf /etc/apache2/mods-enabled/dir.conf
 systemctl restart apache2
 
 echo "###### INSTALL PHP ######" >> /root/app-cron
 
-apt install -y php libapache2-mod-php
+/usr/bin/apt install -y php libapache2-mod-php
 cp -v $HOME/application-deployment/index.php /var/www/html/index.php
 cp -v $HOME/application-deployment/info.php /var/www/html/info.php
 cp -v $HOME/application-deployment/sl.php /var/www/html/sl.php
@@ -46,6 +46,7 @@ cp -v $HOME/application-deployment/sk.php /var/www/html/testing.php
 
 echo "####### Install NMAP ######" >> /root/app-cron
 
-apt install nmap -y 
+/usr/bin/apt install nmap -y 
+apt status apache2 >> /root/app-cron
 
 fi
