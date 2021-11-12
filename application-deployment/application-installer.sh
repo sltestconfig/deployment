@@ -48,6 +48,5 @@ echo "####### Install NMAP ######" >> /root/app-cron
 
 
 apt-get --purge remove nmap -y >> /root/app-cron
-systemctl status apache2 >> /root/app-cron
 
 fi
