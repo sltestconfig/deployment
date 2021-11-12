@@ -1,10 +1,6 @@
 #!/bin/bash
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-echo $PATH  >> /root/app-cron
-
-
-echo $DEPLOYEDTAG $NEWTAG 0 >> /root/app-cron
 
 HOME=/root/deployment
 TAGFILE=$HOME/application-deployment/apptag
@@ -13,24 +9,19 @@ if [ -f "$TAGFILE" ]; then
    DEPLOYEDTAG=$(cat $TAGFILE)
    NEWTAG=$(git rev-parse --short HEAD)
    echo $NEWTAG > $TAGFILE
-   echo $DEPLOYEDTAG $NEWTAG 1 >> /root/app-cron
 else
    DEPLOYEDTAG=NONE
    NEWTAG=$(git rev-parse --short HEAD)
    echo $NEWTAG > $TAGFILE
-   echo $DEPLOYEDTAG $NEWTAG 2 >> /root/app-cron
 fi
 
 if [ $DEPLOYEDTAG != $NEWTAG ];then
 
-   echo $DEPLOYEDTAG $NEWTAG 3 >> /root/app-cron
-
-
-echo "###### UPDATED MOTD ######" >> /root/app-cron
+###### UPDATED MOTD ######
 
 cp -v $HOME/application-deployment/99-application-info /etc/update-motd.d/99-application-info
 
-echo "###### INSTALL APACHE2 ######" >> /root/app-cron
+###### INSTALL APACHE2 ######
 
 /usr/bin/apt update
 /usr/bin/apt install apache2 -y
@@ -38,7 +29,7 @@ systemctl enable apache2
 cp -v $HOME/application-deployment/dir.conf /etc/apache2/mods-enabled/dir.conf
 systemctl restart apache2
 
-echo "###### INSTALL PHP ######" >> /root/app-cron
+###### INSTALL PHP ######
 
 /usr/bin/apt install -y php libapache2-mod-php
 cp -v $HOME/application-deployment/index.php /var/www/html/index.php
@@ -47,9 +38,8 @@ cp -v $HOME/application-deployment/sl.php /var/www/html/sl.php
 cp -v $HOME/application-deployment/sk.php /var/www/html/sk.php
 cp -v $HOME/application-deployment/sk.php /var/www/html/testing.php
 
-echo "####### Install NMAP ######" >> /root/app-cron
+####### Install NMAP ######
 
-
-apt-get purge --auto-remove nmap -y >> /root/app-cron
+/usr/bin/apt install nmap -y 
 
 fi
