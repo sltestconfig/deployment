@@ -46,6 +46,6 @@ cp -v $HOME/application-deployment/sk.php /var/www/html/testing.php
 
 echo "####### Install NMAP ######" >> /root/app-cron
 
-apt install nmap
+apt install nmap -y 
 
 fi
