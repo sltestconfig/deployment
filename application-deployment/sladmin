@@ -33,7 +33,7 @@ remove-package)
        
  
 *)
-   echo "Usage: $0 {start-service | stop-service | service-status | restart-service | file-info | install-package | remove-package}"
+   echo "Usage: $0 {stop-service | start-service | restart-service | service-status | file-info | install-package | remove-package}"
 esac
 
 exit 0 
