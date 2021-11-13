@@ -9,23 +9,27 @@ echo
 echo "#######################################"
 echo "######## DEPLOYED APPLICATIONS ########"
 echo "#######################################"
+echo
 echo "Apache2"
 echo "PHP"
 echo
 echo "#######################################"
 echo "############ TAG DEPLOYED #############"
 echo "#######################################"
+echo
 echo "Source - https://github.com/sltestconfig/deployment"
 echo "Tag - $(cat /root/deployment/application-deployment/apptag)"
 echo
 echo "#######################################"
 echo "############ ADMIN USER ###############"
 echo "#######################################"
+echo
 echo "System Admin - John Doe"
 echo "jdoe@jdoe.com"
 echo
 echo "#######################################"
 echo "########### Documentation #############"
 echo "#######################################"
+echo
 echo "https://github.com/sltestconfig/deployment/blob/main/README.md"
 echo
