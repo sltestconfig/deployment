@@ -1,0 +1,39 @@
+#!/bin/bash
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+INPUT=$2
+
+case "$1" in 
+start-service)
+   echo "Starting $INPUT..."
+   systemctl start $INPUT
+   ;;
+stop-service)
+   echo "Stop $INPUT..."
+   systemctl stop $INPUT
+   ;;
+restart-service)
+   echo "Restarting $INPUT..."
+   $0 stop $INPUT
+   $0 start $INPUT
+   ;;
+service-status)
+   systemctl status $INPUT
+   ;;
+file-info)
+   systemctl status $INPUT
+   ;;
+install-package)
+   /usr/bin/apt install $INPUT -y 
+   ;;
+remove-package)
+   /usr/bin/apt-get remove $INPUT -y 
+   ;;
+       
+ 
+*)
+   echo "Usage: $0 {start-service|stop-service|service-status|restart-service|file-info|install-package|remove-package}"
+esac
+
+exit 0 

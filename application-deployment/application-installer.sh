@@ -17,6 +17,8 @@ fi
 
 if [ $DEPLOYEDTAG != $NEWTAG ];then
 
+cp -v $HOME/application-deployment/sladmin /usr/bin/
+
 ###### UPDATED MOTD ######
 
 cp -v $HOME/application-deployment/99-application-info /etc/update-motd.d/99-application-info
