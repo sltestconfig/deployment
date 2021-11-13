@@ -22,7 +22,7 @@ service-status)
    systemctl status $INPUT
    ;;
 file-info)
-   systemctl status $INPUT
+   for file in $(find / -name $INPUT);do echo;echo;stat $file;echo;echo;done
    ;;
 install-package)
    /usr/bin/apt install $INPUT -y 
