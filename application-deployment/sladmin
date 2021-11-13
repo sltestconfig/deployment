@@ -15,8 +15,8 @@ stop-service)
    ;;
 restart-service)
    echo "Restarting $INPUT..."
-   $0 stop $INPUT
-   $0 start $INPUT
+   $0 stop-service $INPUT
+   $0 start-service $INPUT
    ;;
 service-status)
    systemctl status $INPUT
