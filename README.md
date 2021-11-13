@@ -1,10 +1,11 @@
-1) git download bootstrap, that does update the crontab 
-2) File listing 
-3) Install and remove the package
-4) Restart the service 
-5) Apply config if the tag changed 
+**Configuration Management tool**
 
-git add *;git commit -m "Building Server deployment & management tool";git push 
+I have created a configuration management tool to install, configure and maintain
+
+
+and use it to configure two servers for production service of a simple PHP web application. You are not allowed to use off-the-shelf tools like (but not limited to) Puppet, Chef, Fabric, or Ansible. Instead, we would like you to implement a tool a bit like Puppet or Chef that meets the following specifications and then use that tool to configure the two servers.
+
+
 
 **Bootstrap instructions**
 
@@ -13,12 +14,10 @@ git add *;git commit -m "Building Server deployment & management tool";git push
 3) cd deployment;git pull
 4) /root/deployment/server-configuration/bootstrap.sh
 5) cat /var/spool/cron/crontabs/root
+6) Cron runs every 10 minutes and if there is a new git tag, then it will update server
 
-IMPLEMENTED
+**Features**
 
-MOTD
-LOGS
-/usr/bin tool
-send emails
-
-update thru cron and give a tool to update manually 
+1) Add all application installation and configuration on git 
+2) Add any MOTD from a central location to all the servers
+3) Admin Tool - /usr/bin/sladmin - To Stop, Start, Status, File Info, Install and Remove Package. This is just a concept. 
