@@ -7,7 +7,7 @@
 echo
 echo
 echo "#######################################"
-echo "######## APPLICATION DEPLOYED #########"
+echo "######## DEPLOYED APPLICATIONS ########"
 echo "#######################################"
 echo "Apache2"
 echo "PHP"
@@ -28,6 +28,4 @@ echo "#######################################"
 echo "########### Documentation #############"
 echo "#######################################"
 echo "https://github.com/sltestconfig/deployment/blob/main/README.md"
-echo
-echo
 echo
