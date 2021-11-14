@@ -36,6 +36,7 @@ systemctl restart apache2
 /usr/bin/apt install -y php libapache2-mod-php
 cp -v $HOME/application-deployment/apache2-config/index.php /var/www/html/index.php
 cp -v $HOME/application-deployment/apache2-config/info.php /var/www/html/info.php
+cp -v $HOME/application-deployment/apache2-config/sl.php /var/www/html/sl.php
 
 ####### Install NMAP ######
 
