@@ -26,7 +26,19 @@ file-info)
    if  [ $file -eq 0 ];then
        echo "No file found"
    else
-       for file in $(find / -name $INPUT);do echo;echo;stat $file;echo;echo;echo "###########################";echo "File Content";echo "###########################";cat $file;echo;echo;done
+       for file in $(find / -name $INPUT);
+       do echo;echo;
+       echo "###########################";
+       echo "File Metadata";
+       echo "###########################";
+       echo;
+       stat $file;
+       echo;echo;
+       echo "###########################";
+       echo "File Content";
+       echo "###########################";
+       echo;cat $file;echo;echo;
+       done
    fi
    ;;
 install-package)
