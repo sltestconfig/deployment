@@ -28,13 +28,13 @@ I have created a configuration management tool, which can install, configure and
 3) Admin Tool - /usr/bin/sladmin - To Stop, Start, Status, File Info, Install and Remove Package. This is just a concept. 
 
 
-**Completed Requirements for your rudimentary configuration management tool**
+**Completed 2nd challenge - configuration management tool**
 
 1) Bootstrapping the host
 2) You can run sladmin file-info filename to see file's content and metadata
 3) sladmin allows installing and removing Debian packages
 4) On git repo under application-installer.sh, adminstrator can define how to update the configuration and how to restart the service when relevant files or packages are updated
-5) Tool will only apply changes if git repo is updated and there is a new tag. 
+5) Configuration management tool will only apply changes if git repo has a new tag. 
 6) Installed Apache and PHP and configured as requested
    - http://18.215.154.152/
    - http://54.242.110.132/
