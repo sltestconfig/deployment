@@ -17,13 +17,13 @@ I have created a configuration management tool, which can install, configure and
 2) Under application-deployment folder, you can make changes to following
 
    - application-installer.sh (This is where I am installing apache, php, configuring apache, restarting application)
-   - sladmin (This is a concept command line tool to manage the server from the command line)
-   - Update MOTD 99-application-info, to display the important message
+   - sladmin-config/sladmin (This is a concept command line tool to manage the server from the command line)
+   - motd-config/99-application-info - Update MOTD 99-application-info, to display the important message
    - If you want to install, remove any package or configuration on the servers, then simply update application-installer.sh
 
 **Features**
 
-1) Add all application installation and configuration on git 
+1) Add all application installation, removal and configuration steps on git 
 2) Add any MOTD from a central location to all the servers
 3) Admin Tool - /usr/bin/sladmin - To Stop, Start, Status, File Info, Install and Remove Package. This is just a concept. 
 
@@ -38,5 +38,3 @@ I have created a configuration management tool, which can install, configure and
 6) Installed Apache and PHP and configured as requested
    - http://18.215.154.152/
    - http://54.242.110.132/
-
-
