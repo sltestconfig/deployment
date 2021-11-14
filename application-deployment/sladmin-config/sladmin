@@ -22,7 +22,12 @@ service-status)
    systemctl status $INPUT
    ;;
 file-info)
-   for file in $(find / -name $INPUT);do echo;echo;stat $file;echo;echo;done
+   file=$(find / -name $INPUT | wc -l)
+   if  [ $file -eq 0 ];then
+       echo "No file found"
+   else
+       for file in $(find / -name $INPUT);do echo;echo;stat $file;echo;echo;cat $file;echo;echo;done
+   fi
    ;;
 install-package)
    /usr/bin/apt install $INPUT -y 
